@@ -1,0 +1,18 @@
+name = "incomparability_formal_proof"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["IncomparabilityFormalProof"]
+
+[leanOptions]
+pp.unicode.fun = true
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.29.0"
+
+[[lean_lib]]
+name = "IncomparabilityFormalProof"
